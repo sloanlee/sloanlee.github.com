@@ -52,7 +52,6 @@ small {
 }
 
 blockquote, blockquote p {
-    font-style: italic;
     line-height: 1.3em;
     text-align: center;
     color: lighten($black, .2);
@@ -408,7 +407,6 @@ header.site-header nav {
             
             h1 {
                 font-size: $fs3;
-                font-style: italic;
             }
         }
         
@@ -456,7 +454,6 @@ header.site-header nav {
     }
     
     h1 {
-        font-style: italic;
     }
     
     h1, h2, h3, h4, h5 {
@@ -589,7 +586,6 @@ footer {
     .list-title {
         margin-bottom: $lh/2;
         border-bottom: 2px solid $link;
-        font-style: italic;
         font-size: $fs4;
     }
     .prev-posts {
@@ -605,7 +601,6 @@ footer {
             margin-top: $lh/2;
             .recent-title {
                 @include column(8,12);
-                font-style: italic;
                 a {
                     &:hover {
                         color: $white;
@@ -630,7 +625,6 @@ footer {
         top: 109px;
         @include column(2,12);
         right: 5vw;
-        font-style: italic;
         a {
             &:hover {
                 color: $white;
