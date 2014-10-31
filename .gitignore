@@ -1,5 +1,4 @@
 _site/*
-!_site/CNAME
 _theme_packages/*
 .sass-cache/*
 
