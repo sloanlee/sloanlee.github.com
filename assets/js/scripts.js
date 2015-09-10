@@ -1,12 +1,12 @@
 $(document).ready(function() {
   var toc = $("#markdown-toc");
 
-  toc.on("scroll", function(e) {
-    if (this.scrollTop > 20) {
-      toc.addClass("absolute-toc");
+  $(window).on("scroll", function(e) {
+    if ($("#section").offset().top < $(window).scrollTop()) {
+      toc.offset({top: $(window).scrollTop()});
     } else {
-      toc.removeClass("absolute-toc");
-    }    
+      toc.offset({top: $("#section").offset().top});
+    }
   });
   $('a.menu').click(function() {
     $('.site-header nav').slideToggle(100);
