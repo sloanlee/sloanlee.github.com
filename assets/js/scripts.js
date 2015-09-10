@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  var toc = $("#markdown-toc");
+
+  toc.on("scroll", function(e) {
+    if (this.scrollTop > 20) {
+      toc.addClass("absolute-toc");
+    } else {
+      toc.removeClass("absolute-toc");
+    }    
+  });
   $('a.menu').click(function() {
     $('.site-header nav').slideToggle(100);
     return false;

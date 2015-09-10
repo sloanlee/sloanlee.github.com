@@ -88,6 +88,9 @@ table {
     content: "目录";
     font-weight: bold;
 }
+ul#markdown-toc.absolute-toc {
+    position: static;
+}
 ul#markdown-toc {
     display: table;
     list-style: none;
