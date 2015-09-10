@@ -89,20 +89,23 @@ table {
     font-weight: bold;
 }
 ul#markdown-toc {
+    display: table;
     list-style: none;
     position: fixed;
     padding: 0px;
     top: 20px;
     left: 10px;
     bottom: 200px;
+    margin-bottom: 0;
     border-radius: 0.3em;
     box-shadow: rgba(0,0,0,0.15) 0 1px 4px;
     box-sizing: border-box;
     border: #fff 0.5em solid;
     background-color: white;
     li {
+      list-style-type: circle;
       font-size: 16px;
-      line-height: 0;
+      line-height: 20px;
       margin-bottom: 0;
       padding-left: 0;
     }
